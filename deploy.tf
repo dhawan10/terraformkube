@@ -1,3 +1,4 @@
+
 resource "kubernetes_deployment" "flask" {
   metadata {
     name = "flask"
@@ -21,7 +22,7 @@ resource "kubernetes_deployment" "flask" {
       }
       spec {
         container {
-          image = "flask-restful-apis:v1.0.0"
+          image = "dhawan10/flask-restful-apis:v1.0.0"
           name  = "servicecontainer"
 
           port {
